@@ -1,0 +1,102 @@
+.btnAdd{
+    background-color: #00FFFF;
+    padding: 15px 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius:7px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.btnEdit{
+    background-color: #00FF7F;
+    padding: 15px 5px ;
+    margin:5px;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: inherit;
+    margin-left: auto;
+
+}
+.btnDelete{
+    background-color: red;
+    padding: 15px 5px;
+    margin:5px;
+    text-align: center;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: inherit;
+
+}
+
+.title{
+  text-align: center;
+}
+
+.TodoList{
+  padding:0 10rem;
+}
+
+.Todos p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+
+
+.Todos{
+    display:flex;
+    position: relative;
+}
+
+body{
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+ul li:hover {
+  background: #ddd;
+}
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}

@@ -1,0 +1,25 @@
+.addTodo{
+    text-align: center;
+    
+}
+
+.addTodo form {
+    align-items:center;
+}
+
+.addTodo form input {
+    width: 70%;
+    padding: 10px;
+    margin:5px;
+
+}
+
+.addTodo button{
+    background-color: #4169E1;
+    color:white;
+    padding:5px;
+    margin-left :45%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: block;
+}

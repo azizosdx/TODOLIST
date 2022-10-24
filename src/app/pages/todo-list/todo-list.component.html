@@ -1,0 +1,20 @@
+<div>
+    <h1 class="title">Liste des Todos</h1>
+    <a class="btnAdd" routerLink="/todo/form/ajouter">Ajouter</a>
+    <div class="TodoList" *ngIf="todos.length > 0">
+        <!--todos-->
+        <!-- <div class="Todos" *ngFor="let todo of todos" > -->
+          <ul>
+          <li class="list-list-item Todos" *ngFor="let todo of todos" >
+            <p>
+                 {{todo.content}} | {{todo.date | date}}
+            </p>
+            <a  class="btnEdit" routerLink='/todo/form/modifier/{{todo._id}}'>Modifier</a>
+            <a  class="btnDelete"  (click)="DeleteTodo(todo._id)" >Supprimer</a>
+          </li>
+        </ul>
+        <!-- </div> -->
+
+    </div>
+    <p *ngIf="todos.length <= 0">No posts added yet !</p>
+</div>

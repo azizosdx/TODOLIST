@@ -1,0 +1,10 @@
+<div class="addTodo">
+    <h1>ajouter une nouvelle todo</h1>
+    <form #addform="ngForm" (ngSubmit)="AddTodos(addform)" >
+        <input type="text" name="content" placeholder="entrer votre todo" ngModel required #content="ngModel">
+        <input type="date" name="date" ngModel required #date="ngModel">
+        
+
+        <button type="submit">Enregistrer</button>
+    </form>
+</div>
